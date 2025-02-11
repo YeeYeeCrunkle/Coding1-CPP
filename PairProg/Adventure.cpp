@@ -36,7 +36,7 @@ int main() {
 		block = (rand() % 4); // the randomiser for block
 
 		if (block < attack) { // takes health away if unable to block
-			health = health - attack;
+			health -= attack;
 			cout << "you've taken " << attack << " damage!\n";
 		}
 		if (block >= attack) {//checks if block is high enough to ignore damage
