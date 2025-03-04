@@ -59,7 +59,7 @@ int main() {
 			if (ready == "END") { // allows the player to quit at the end of every turn if they want
 				cout << "Thanks for playing!\n";
 				return(0);
-
+			
 			}
 		}
 	}
