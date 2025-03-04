@@ -25,18 +25,12 @@ get input < -
 					5. Quit
 					return(0) if the player types 'Quit' */
 
-#include <iostream>; //this 
-#include <string>;  // allows us to use the string varriable type
+#include <iostream>;
+#include <string>;
 
 	using namespace std;
 
 	int main() {
-		// we are going to build an array
-		//an array is an ordered list of a single type of variable
-
-		//create an array of integers with a [size of 10]
-
-
 
 		string gamesList[20];
 		int gameCount = 0;
@@ -45,6 +39,7 @@ get input < -
 		cout << "we're making a list of your favorite games!\nType 'Add' to add to the list\nType 'Edit' to edit an item in the list\nType 'Remove' to delete an item from the list\nType 'Show' to display everything in your list so fara\n";
 
 		cout << "or type 'Quit' to quit.\n";
+
 		do {
 
 			cout << "Please type a command.\n";
@@ -64,7 +59,7 @@ get input < -
 
 			}
 
-			if (input == "Edit") {
+			else if (input == "Edit") {
 
 				cout << "What do you want to edit?\n";
 
@@ -95,7 +90,8 @@ get input < -
 				}
 
 			}
-			if (input == "Remove") {
+
+			else if (input == "Remove"){
 
 				cout << "What do you want to remove?\n";
 
@@ -121,11 +117,9 @@ get input < -
 
 				}
 
-				
-
-
 			}
-			if (input == "Show") {
+
+			else if (input == "Show") {
 				for (int i = 0; i < gameCount; i++) {
 					if (gamesList[i] == "") {
 						continue;
@@ -138,17 +132,21 @@ get input < -
 				}
 			}
 
-			if (input == "Quit") {
+			else if (input == "Quit") {
 				cout << "thanks for adding your favorite games!\n";
 
 				break;
 			}
 
-			if (gameCount >= 19) {
+			else if (gameCount >= 19) {
 				cout << "youve reached max favorite games.\n";
 
 				break;
 			}
+
+
+
+
 
 
 			/*for (int i = 0; i < gameCount; i++) {
