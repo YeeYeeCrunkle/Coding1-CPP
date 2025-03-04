@@ -42,11 +42,12 @@ get input < -
 
 		do {
 
-			cout << "Please type a command.\n";
+			cout << "\n\tPlease type a command.\n";
 
 			getline(cin, input);
 
-			if (input == "Add") {
+			if (input == "Add")
+			{
 
 				cout << "What do you want to Add?\n";
 
@@ -59,7 +60,8 @@ get input < -
 
 			}
 
-			else if (input == "Edit") {
+			else if (input == "Edit")
+			{
 
 				cout << "What do you want to edit?\n";
 
@@ -91,7 +93,8 @@ get input < -
 
 			}
 
-			else if (input == "Remove"){
+			else if (input == "Remove")
+			{
 
 				cout << "What do you want to remove?\n";
 
@@ -119,7 +122,8 @@ get input < -
 
 			}
 
-			else if (input == "Show") {
+			else if (input == "Show")
+			{
 				for (int i = 0; i < gameCount; i++) {
 					if (gamesList[i] == "") {
 						continue;
@@ -132,13 +136,15 @@ get input < -
 				}
 			}
 
-			else if (input == "Quit") {
+			else if (input == "Quit") 
+			{
 				cout << "thanks for adding your favorite games!\n";
 
 				break;
 			}
 
-			else if (gameCount >= 19) {
+			else if (gameCount >= 19)
+			{
 				cout << "youve reached max favorite games.\n";
 
 				break;
