@@ -52,7 +52,7 @@ bool askYesNo(string question = "Would you like to continue your Adventure?\n") 
 void adventure() {
 	while (true) { //main game loop
 
-		turns += 1; // tracks player turn
+
 		int attack = rollDie(); //the randomiser for attack
 		int block = rollDie(); // the randomiser for block
 		cout << "\nthe enemies attack is " << attack << " and your block is " << block << ".\n";
