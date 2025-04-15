@@ -3,7 +3,7 @@
 #include <cstdlib>;
 #include <ctime>;
 using namespace std; 
-
+/*
 // this code is available on my github:https://github.com/YeeYeeCrunkle/Coding1-CPP
 // last unresloved issue from most recent editing sesion : displays damage taken or successful block at end of journey
 int health = 25;
@@ -100,6 +100,6 @@ int main() {
 	
 }
 
-
+*/
 
 
